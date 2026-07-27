@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Tradie",
+    "slug": "tradie-app",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E8500A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.tradie.mobile",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#E8500A"
+      },
+      "package": "app.tradie.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Tradie a besoin d'accéder à vos photos pour ajouter une image à vos prestations."
+        }
+      ]
+    ],
+    "scheme": "tradie",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "85787e1d-b789-4156-b10b-7f669c2df438"
+      }
+    }
+  }
+}
